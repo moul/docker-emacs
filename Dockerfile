@@ -1,8 +1,6 @@
-FROM ubuntu:quantal
+FROM ubuntu:latest
 MAINTAINER Manfred Touron m@42.am
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ quantal main universe" > /etc/apt/sources.list
-RUN apt-get update
 RUN apt-get install -y emacs24-nox
 RUN mkdir /.emacs.d
 
